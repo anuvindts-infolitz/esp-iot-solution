@@ -394,7 +394,7 @@ static esp_err_t panel_axs15231b_disp_off(esp_lcd_panel_t *panel, bool off)
     return ESP_OK;
 }
 
-esp_err_t esp_lcd_touch_new_i2c_axs15231b(const esp_lcd_panel_io_handle_t io, const esp_lcd_touch_config_t *config, esp_lcd_touch_handle_t *tp)
+esp_err_t esp_lcd_touch_new_i2c_axs15231b(const esp_lcd_panel_io_i2c_config_t io, const esp_lcd_touch_config_t *config, esp_lcd_touch_handle_t *tp)
 {
     ESP_RETURN_ON_FALSE(io, ESP_ERR_INVALID_ARG, TAG, "Invalid io");
     ESP_RETURN_ON_FALSE(config, ESP_ERR_INVALID_ARG, TAG, "Invalid config");
